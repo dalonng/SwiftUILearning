@@ -39,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03568F5B2A02B9850050C87D /* developer.setting.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = developer.setting.xcconfig; sourceTree = "<group>"; };
+		036D11D62A02BD1000FCD528 /* SwiftUILearning.Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SwiftUILearning.Tests.xcconfig; sourceTree = "<group>"; };
+		036D11D72A02BD2100FCD528 /* SwiftUILearning.UITests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SwiftUILearning.UITests.xcconfig; sourceTree = "<group>"; };
 		038CBAD92A020723001A1A42 /* SwiftUILearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		038CBADC2A020723001A1A42 /* SwiftUILearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILearningApp.swift; sourceTree = "<group>"; };
 		038CBADE2A020723001A1A42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		038CBB0D2A024EAF001A1A42 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		038CBB112A02516A001A1A42 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		038CBB152A02523C001A1A42 /* FeatureRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureRow.swift; sourceTree = "<group>"; };
+		039C5C872A02B5C000BD7380 /* SwiftUILearning.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SwiftUILearning.debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		038CBADB2A020723001A1A42 /* SwiftUILearning */ = {
 			isa = PBXGroup;
 			children = (
+				039C5C862A02B5C000BD7380 /* XCConfigs */,
 				038CBB142A02522D001A1A42 /* Views */,
 				038CBB0F2A02513F001A1A42 /* Features */,
 				038CBB0C2A024EA3001A1A42 /* Router */,
@@ -189,6 +194,17 @@
 			);
 			path = Views;
 			sourceTree = "<group>";
+		};
+		039C5C862A02B5C000BD7380 /* XCConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				039C5C872A02B5C000BD7380 /* SwiftUILearning.debug.xcconfig */,
+				03568F5B2A02B9850050C87D /* developer.setting.xcconfig */,
+				036D11D62A02BD1000FCD528 /* SwiftUILearning.Tests.xcconfig */,
+				036D11D72A02BD2100FCD528 /* SwiftUILearning.UITests.xcconfig */,
+			);
+			path = XCConfigs;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -479,13 +495,13 @@
 		};
 		038CBAFE2A020723001A1A42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 039C5C872A02B5C000BD7380 /* SwiftUILearning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUILearning/Preview Content\"";
-				DEVELOPMENT_TEAM = ZX794FKY96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -498,7 +514,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mototo.SwiftUILearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -508,13 +523,13 @@
 		};
 		038CBAFF2A020723001A1A42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 039C5C872A02B5C000BD7380 /* SwiftUILearning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUILearning/Preview Content\"";
-				DEVELOPMENT_TEAM = ZX794FKY96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -527,7 +542,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mototo.SwiftUILearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -537,16 +551,15 @@
 		};
 		038CBB012A020723001A1A42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 036D11D62A02BD1000FCD528 /* SwiftUILearning.Tests.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZX794FKY96;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mototo.SwiftUILearningTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -557,16 +570,15 @@
 		};
 		038CBB022A020723001A1A42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 036D11D62A02BD1000FCD528 /* SwiftUILearning.Tests.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZX794FKY96;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mototo.SwiftUILearningTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -577,14 +589,13 @@
 		};
 		038CBB042A020723001A1A42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 036D11D72A02BD2100FCD528 /* SwiftUILearning.UITests.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZX794FKY96;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mototo.SwiftUILearningUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -595,14 +606,13 @@
 		};
 		038CBB052A020723001A1A42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 036D11D72A02BD2100FCD528 /* SwiftUILearning.UITests.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZX794FKY96;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mototo.SwiftUILearningUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;

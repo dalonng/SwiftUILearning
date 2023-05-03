@@ -1,0 +1,4 @@
+
+#include? "developer.setting.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = $(BUNDLE_ID_PREFIX).swiftuilearning
