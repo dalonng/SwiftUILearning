@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035D63232A040AF400C9775E /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035D63222A040AF400C9775E /* DotView.swift */; };
+		035D63252A040F2C00C9775E /* DotLoadingVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035D63242A040F2C00C9775E /* DotLoadingVIew.swift */; };
 		038CBADD2A020723001A1A42 /* SwiftUILearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038CBADC2A020723001A1A42 /* SwiftUILearningApp.swift */; };
-		038CBADF2A020723001A1A42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038CBADE2A020723001A1A42 /* ContentView.swift */; };
 		038CBAE12A020723001A1A42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038CBAE02A020723001A1A42 /* Assets.xcassets */; };
 		038CBAE42A020723001A1A42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038CBAE32A020723001A1A42 /* Preview Assets.xcassets */; };
 		038CBAEE2A020723001A1A42 /* SwiftUILearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038CBAED2A020723001A1A42 /* SwiftUILearningTests.swift */; };
@@ -40,11 +41,12 @@
 
 /* Begin PBXFileReference section */
 		03568F5B2A02B9850050C87D /* developer.setting.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = developer.setting.xcconfig; sourceTree = "<group>"; };
+		035D63222A040AF400C9775E /* DotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
+		035D63242A040F2C00C9775E /* DotLoadingVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotLoadingVIew.swift; sourceTree = "<group>"; };
 		036D11D62A02BD1000FCD528 /* SwiftUILearning.Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SwiftUILearning.Tests.xcconfig; sourceTree = "<group>"; };
 		036D11D72A02BD2100FCD528 /* SwiftUILearning.UITests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SwiftUILearning.UITests.xcconfig; sourceTree = "<group>"; };
 		038CBAD92A020723001A1A42 /* SwiftUILearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		038CBADC2A020723001A1A42 /* SwiftUILearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILearningApp.swift; sourceTree = "<group>"; };
-		038CBADE2A020723001A1A42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		038CBAE02A020723001A1A42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		038CBAE32A020723001A1A42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		038CBAE92A020723001A1A42 /* SwiftUILearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUILearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		035D63212A040ADF00C9775E /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				035D63222A040AF400C9775E /* DotView.swift */,
+				035D63242A040F2C00C9775E /* DotLoadingVIew.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
 		038CBAD02A020723001A1A42 = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +126,6 @@
 				038CBB092A02075B001A1A42 /* Models */,
 				038CBB062A020732001A1A42 /* App */,
 				038CBADC2A020723001A1A42 /* SwiftUILearningApp.swift */,
-				038CBADE2A020723001A1A42 /* ContentView.swift */,
 				038CBAE02A020723001A1A42 /* Assets.xcassets */,
 				038CBAE22A020723001A1A42 /* Preview Content */,
 			);
@@ -190,6 +200,7 @@
 		038CBB142A02522D001A1A42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				035D63212A040ADF00C9775E /* LoadingView */,
 				038CBB152A02523C001A1A42 /* FeatureRow.swift */,
 			);
 			path = Views;
@@ -337,10 +348,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				038CBB0B2A020881001A1A42 /* Feature.swift in Sources */,
-				038CBADF2A020723001A1A42 /* ContentView.swift in Sources */,
+				035D63232A040AF400C9775E /* DotView.swift in Sources */,
 				038CBB162A02523C001A1A42 /* FeatureRow.swift in Sources */,
 				038CBB122A02516A001A1A42 /* Page.swift in Sources */,
 				038CBB0E2A024EAF001A1A42 /* Router.swift in Sources */,
+				035D63252A040F2C00C9775E /* DotLoadingVIew.swift in Sources */,
 				038CBB082A02074B001A1A42 /* MainView.swift in Sources */,
 				038CBADD2A020723001A1A42 /* SwiftUILearningApp.swift in Sources */,
 			);

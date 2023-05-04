@@ -15,7 +15,7 @@ struct FeatureRow: View {
     NavigationLink(value: feature) {
       Text("\(feature.name)")
         .font(.title)
-    }
+    }.frame(height: 40)
   }
 }
 

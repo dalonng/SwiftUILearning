@@ -21,7 +21,10 @@ struct MainView: View {
         }
       }
       .navigationDestination(for: Feature.self) { f in
-        Page(feature: f)
+        switch f.type {
+        case .navigationStack: Page(feature: f)
+        case .loadingView: DotLoadingVIew(color: f.color)
+        }
       }
       .navigationBarTitle("タイトル")
     }

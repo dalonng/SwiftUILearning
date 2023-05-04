@@ -7,9 +7,18 @@
 
 import SwiftUI
 
+enum FeatureType: String {
+  case navigationStack = "Navigation Stack"
+  case loadingView = "Loading View"
+}
+
 struct Feature {
-  let name: String
   let color: Color
+  let type: FeatureType
+  
+  var name: String {
+    type.rawValue
+  }
 }
 
 extension Feature: Hashable {  
@@ -24,12 +33,7 @@ extension Feature: Identifiable {
 extension Feature {
   
   static let features = [
-    Feature(name: "NavigationStack", color: .yellow),
-    
-    
-    Feature(name: "red", color: .red),
-    Feature(name: "blue", color: .blue),
-    Feature(name: "green", color: .green),
-
+    Feature(color: .yellow, type: .navigationStack),
+    Feature(color: .purple, type: .loadingView),
   ]
 }
