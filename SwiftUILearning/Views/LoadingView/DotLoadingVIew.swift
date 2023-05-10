@@ -7,18 +7,17 @@
 
 import SwiftUI
 
-struct DotLoadingVIew: View {
-  
+struct DotLoadingView: View {
+
   private let delay: Double = 0.2
   private let size: CGFloat
   private let color: Color
-  
+
   init(size: CGFloat = 60, color: Color) {
     self.size = size
     self.color = color
   }
-  
-    
+
   var body: some View {
     VStack {
       Spacer()
@@ -36,7 +35,7 @@ struct DotLoadingVIew: View {
 }
 
 struct DotLoadingVIew_Previews: PreviewProvider {
-    static var previews: some View {
-      DotLoadingVIew(size: 60, color: .blue)
-    }
+  static var previews: some View {
+    DotLoadingView(size: 60, color: .blue)
+  }
 }

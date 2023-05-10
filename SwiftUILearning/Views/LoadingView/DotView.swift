@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct DotView: View {
-  
+
   private let delay: Double
   private let size: CGFloat
   private let color: Color
-  
+
   @State private var scale: CGFloat = 0.5
-  
+
   init(delay: Double, size: CGFloat, color: Color) {
     self.delay = delay
     self.size = size
     self.color = color
   }
-  
+
   var body: some View {
     Circle()
       .frame(width: size, height: size)
@@ -36,7 +36,7 @@ struct DotView: View {
 }
 
 struct DotView_Previews: PreviewProvider {
-    static var previews: some View {
-      DotView(delay: 0, size: 60, color: .blue)
-    }
+  static var previews: some View {
+    DotView(delay: 0, size: 60, color: .blue)
+  }
 }

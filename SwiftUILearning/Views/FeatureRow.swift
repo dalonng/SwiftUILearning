@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct FeatureRow: View {
-  
+
   var feature: Feature
 
   var body: some View {
     NavigationLink(value: feature) {
       Text("\(feature.name)")
-        .font(.title)
+        .font(.title2)
     }.frame(height: 40)
   }
 }

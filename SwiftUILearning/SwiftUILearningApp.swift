@@ -9,11 +9,10 @@ import SwiftUI
 
 @main
 struct SwiftUILearningApp: App {
-    var body: some Scene {
-        WindowGroup {
-//            ContentView()
-          MainView()
-            .environmentObject(Router())
-        }
+  var body: some Scene {
+    WindowGroup {
+      MainView()
+        .environmentObject(Router())
     }
+  }
 }

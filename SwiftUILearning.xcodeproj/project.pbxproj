@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		033761BA2A0BE62400AAB55B /* OverlaysPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033761B92A0BE62400AAB55B /* OverlaysPage.swift */; };
 		035D63232A040AF400C9775E /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035D63222A040AF400C9775E /* DotView.swift */; };
 		035D63252A040F2C00C9775E /* DotLoadingVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035D63242A040F2C00C9775E /* DotLoadingVIew.swift */; };
 		038CBADD2A020723001A1A42 /* SwiftUILearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038CBADC2A020723001A1A42 /* SwiftUILearningApp.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		033761B92A0BE62400AAB55B /* OverlaysPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlaysPage.swift; sourceTree = "<group>"; };
 		03568F5B2A02B9850050C87D /* developer.setting.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = developer.setting.xcconfig; sourceTree = "<group>"; };
 		035D63222A040AF400C9775E /* DotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
 		035D63242A040F2C00C9775E /* DotLoadingVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotLoadingVIew.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				038CBB102A025147001A1A42 /* NavigationStack */,
+				033761B92A0BE62400AAB55B /* OverlaysPage.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			files = (
 				038CBB0B2A020881001A1A42 /* Feature.swift in Sources */,
 				035D63232A040AF400C9775E /* DotView.swift in Sources */,
+				033761BA2A0BE62400AAB55B /* OverlaysPage.swift in Sources */,
 				038CBB162A02523C001A1A42 /* FeatureRow.swift in Sources */,
 				038CBB122A02516A001A1A42 /* Page.swift in Sources */,
 				038CBB0E2A024EAF001A1A42 /* Router.swift in Sources */,
