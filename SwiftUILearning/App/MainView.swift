@@ -28,6 +28,7 @@ struct MainView: View {
         }
       }
       .navigationBarTitle("タイトル")
+      .foregroundColor(.accentColor)
     }
     .navigationBarTitle("Main")
     .environmentObject(router)

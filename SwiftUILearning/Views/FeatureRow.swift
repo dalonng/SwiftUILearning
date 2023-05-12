@@ -15,6 +15,7 @@ struct FeatureRow: View {
     NavigationLink(value: feature) {
       Text("\(feature.name)")
         .font(.title2)
+        .foregroundColor(.accentColor)
     }.frame(height: 40)
   }
 }
